@@ -14,10 +14,69 @@ Contenido de la presentación:
 
 * ¿Qué son las aplicaciones web progresivas?
 * Características de una PWA
-* Requerimientos
+* Tecnologías
 * Ejemplos
 
 ====
 
+== ¿Qué es una PWA?
+
+Las aplicaciones web progresivas (PWA) son un tipo de aplicación de software que se entrega a través de la web. Son desarrolladas utilizando tecnologías web comunes, como HTML, CSS y JavaScript.
+
+Representan la evolución de las páginas webs hacia un ecosistema tecnológico más cercano al de una aplicación móvil o de escritorio instalable en el sistema operativo.
+
+== Características de una PWA
+
+== Progresiva
+
+Funcionan para todos los usuarios, independientemente de la elección del navegador, utilizando principios de mejora progresiva.
+
+== Adaptativa "Responsive"
+
+Se adaptan a cualquier factor de forma: computadora de escritorio, dispositivo móvil, tableta o formas que aún no han surgido.
+
+== Más rápido después de la carga inicial
+
+Una vez finalizada la carga inicial, no es necesario volver a descargar el mismo contenido y elementos de página cada vez.
+
+Los sitios web ordinarios a menudo ya usaban la memoria caché del navegador para evitar volver a descargar los mismos datos de forma redundante.
+
+== Independiente de la conectividad
+
+Los service workers permiten el uso offline o la operación en redes de baja calidad.
+
+== Lucen como una aplicación
+
+Las PWA ofrecen al usuario la experiencia de una aplicación nativa, usando interacciones y estilo de navegación similar.
+
+== Frescas
+
+El contenido siempre esta actualizado debido al proceso de actualización del Service Worker.
+
+== Seguras
+
+El contenido se sirve a través de HTTPS para evitar que el contenido sea "escuchado" y garantizar que no haya sido manipulado.
+
+== Detectable
+
+Identificable como una "aplicación" a través el manifest.json y el registro del Service Worker. Además, son detectable por los motores de búsqueda.
+
+== Atractivas
+
+Capacidad de usar notificaciones push para mantener la atención del usuario.
+
+== Instalable
+
+Se pueden instalar en la pantalla de inicio sin el uso de una tienda de aplicaciones.
+
+== Vinculable
+
+Se puede compartir fácilmente a través de una URL y no requiere una instalación compleja.
+
+== Tecnologías
+
+* Manifest
+* Service Worker
+* Web Storage
 
 include::self.ad[]
