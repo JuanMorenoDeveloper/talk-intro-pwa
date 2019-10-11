@@ -75,8 +75,65 @@ Se puede compartir fácilmente a través de una URL y no requiere una instalaci�
 
 == Tecnologías
 
-* Manifest
-* Service Worker
-* Web Storage
+== Manifest
 
-include::self.ad[]
+La *W3C* creó la especificación para el manifest.json (manifiesto en formato JSON), el cual provee un punto centralizado para la configuración de metadata de la aplicación.
+
+[NOTE.speaker]
+====
+* Enlace a la especificación: https://www.w3.org/TR/appmanifest/
+* Considerar que algunos navegadores no lo soportan, principalmente iOS Safari no soporta todas las etiquetas del manifest y puede que requiera un polyfill o uso de etiquetas especiales (meta) en la página de la aplicación. Se puede ver el soporte actual en https://caniuse.com/#search=web%20app%20manifest
+====
+
+== Ejemplos de metadata de la aplicación
+
+* Nombre de la aplicación.
+* Iconos y e imágenes
+* URL de inicio de la aplicación
+* Datos de configuración
+* Orientación por defecto
+* Opciones de visualización
+
+== Ejemplo de manifest.json
+
+```json
+{
+  "name": "Donate App",
+  "description": "This app helps you donate to worthy causes.",
+  "icons": [{
+    "src": "images/icon.png",
+    "sizes": "192x192"
+  }]
+}
+```
+
+== Service Worker
+
+Un service worker es un archivo JavaScript que funciona como un tipo de web worker. Tiene la capacidad para ejecutarse en segundo plano y es independiente de la interfaz de usuario.
+
+== Objetivos de los Service Worker
+
+* Proveer a la PWA la experiencia de una aplicación nativa.
+* Ofreciendo buen rendimiento
+* Ocupar poco espacio en el dispositivo
+* Proveer actualizaciones en tiempo real
+
+== ¿Para qué podemos usar los service workers?
+
+* Enviar notificaciones push.
+* Sincronizar datos en segundo plano.
+* Manejar cache.
+* Manejar peticiones de red
+* Recibir actualizaciones.
+
+== Web Storage
+
+Web Storage es una API estándar de la W3C que permite el almacenamiento de datos clave-valor en los navegadores modernos.
+
+[NOTE.speaker]
+====
+Fuentes:
+
+* https://en.wikipedia.org/wiki/Progressive_web_applications
+====
+
